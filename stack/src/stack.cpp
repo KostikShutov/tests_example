@@ -31,9 +31,9 @@ void stack_pop(Stack *stack)
         return;
     }
 
-    Node *tmp = stack->head;
+    Node *current = stack->head;
     stack->head = stack->head->next;
-    delete tmp;
+    delete current;
     stack->size--;
 }
 

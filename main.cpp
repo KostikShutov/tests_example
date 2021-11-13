@@ -10,5 +10,7 @@ int main()
         stack_push(stack, i);
     }
 
+    std::cout << stack_top(stack) << std::endl;
+
     stack_print(stack, std::cout);
 }
